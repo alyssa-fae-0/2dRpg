@@ -1,0 +1,51 @@
+2/11/15
+	Created test tile map
+	Prepared for tilemap loading refactor
+	
+2/8/15
+	Pulled out text rendering into a separate function
+	
+2/7/15
+	Fixed player can't jump out off of platform consistently
+
+Day 008_1 -- added playerOccupiedTiles[]
+	game now tracks tiles that the player is occupying (ladders attached to, platforms standing on)
+	Day 007's regressions are fixed
+
+Day 008 -- fixed ladder interactions
+	tile map needs revision; (Tile *playerOccupiedTile)?
+
+Day 007_1 -- ladder feature reimplementation
+	reimplemented ladder interactions for tilemap
+		still needs ladder-jump interactions
+
+Day 007 -- tilemap revision
+	revised internal representation of tiles
+	reimplementing logic
+
+Day 005 -- tilemap
+	created a rough tilemap
+	needs revision
+
+Day 004_1 -- multi-ladder
+	extended ladder support into multiple ladders support
+	added mouse screen-position and world-position to debug info
+
+Day 004 -- debug rendering
+	changed input tracking
+	added debugTextRendering
+
+Day 003 -- multiple platforms, single ladder
+	added support for multiple platforms
+	player can walk from one platform to another level platform
+	player is now confined to the game world screen (currently [0.0f, 10.0f])
+	implemented a ladder
+
+Day 002 -- player-platform collision
+	player now properly lands on the platform;
+	player can walk off platform or press 'S' to fall through (ala Mario)
+
+Day 001 -- Player movement
+	created window, dimension-based room;
+	created temporary player;
+	player can walk, fall, and jump
